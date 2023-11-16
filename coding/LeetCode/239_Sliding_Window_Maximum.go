@@ -4,7 +4,7 @@ package main
 
 https://leetcode.com/problems/sliding-window-maximum/description/
 
-Hard, Monotonic Queue
+Hard, Queue, Monotonic Queue
 
 Time Complexity: O(n)
 Space Complexity: O(k)
