@@ -2,7 +2,7 @@ package main
 
 /*
 
-https://leetcode.com/problems/backspace-string-compare/description/
+https://leetcode.com/problems/backspace-string-compare/
 
 Easy, Stack
 

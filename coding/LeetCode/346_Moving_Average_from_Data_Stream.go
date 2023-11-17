@@ -2,7 +2,7 @@ package main
 
 /*
 
-https://leetcode.com/problems/moving-average-from-data-stream/description/
+https://leetcode.com/problems/moving-average-from-data-stream/
 
 Easy, Queue
 

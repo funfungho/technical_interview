@@ -2,7 +2,7 @@ package main
 
 /*
 
-https://leetcode.com/problems/daily-temperatures/description/
+https://leetcode.com/problems/daily-temperatures/
 
 Medium, Monotonic Stack
 

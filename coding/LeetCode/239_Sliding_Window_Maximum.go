@@ -2,7 +2,7 @@ package main
 
 /*
 
-https://leetcode.com/problems/sliding-window-maximum/description/
+https://leetcode.com/problems/sliding-window-maximum/
 
 Hard, Queue, Monotonic Queue
 

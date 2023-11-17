@@ -2,7 +2,7 @@ package main
 
 /*
 
-https://leetcode.com/problems/number-of-recent-calls/description/
+https://leetcode.com/problems/number-of-recent-calls/
 
 Easy, Queue
 
