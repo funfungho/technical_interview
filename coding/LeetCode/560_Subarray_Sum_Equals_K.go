@@ -2,7 +2,7 @@ package main
 
 /*
 
-https://leetcode.com/problems/subarray-sum-equals-k/description/
+https://leetcode.com/problems/subarray-sum-equals-k/
 
 Medium, Prefix Sum, Hash Table
 
@@ -18,7 +18,7 @@ func subarraySum(nums []int, k int) int {
 		prefixSum += num
 		if ht[prefixSum-k] > 0 {
 			// There's <ht[prefixSum - k]> number of prefix sums with smaller indices
-			// that prefix sum at current index can substract to get the qualified
+			// that prefix sum at current index can subtract to get the qualified
 			// subarray.
 			ans += ht[prefixSum-k]
 		}
