@@ -33,11 +33,11 @@ func hasPathSum(root *TreeNode, targetSum int) bool {
 		}
 	}
 
+	// * go straight to the leaf (deepest) node, then go back one level at a time
 	return hasPathSum(root.Left, targetSum-root.Val) || hasPathSum(root.Right, targetSum-root.Val)
 }
 
 // ! wrong implementation
-
 func hasPathSumWrong(root *TreeNode, targetSum int) bool {
 	if root == nil {
 		return false
@@ -48,7 +48,7 @@ func hasPathSumWrong(root *TreeNode, targetSum int) bool {
 			return true
 		}
 	} else if root.Left != nil {
-		// * return result after arriving at the first leaf node
+		// * returns result after arriving at the first leaf node
 		if hasPathSum(root.Left, targetSum-root.Val) {
 			return true
 		}
