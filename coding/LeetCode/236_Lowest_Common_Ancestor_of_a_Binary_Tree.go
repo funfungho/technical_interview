@@ -4,7 +4,7 @@ package main
 
 https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
 
-Tree, DFS
+Medium, Tree, DFS
 
 ! The key is to analyze the 3 cases:
 1. p and q are in the same subtree: return the subtree root (!important)
@@ -13,10 +13,10 @@ Tree, DFS
 
 */
 
-/**
- * Definition for a binary tree node.
-
- */
+/*
+*
+  - Definition for a binary tree node.
+*/
 type TreeNode struct {
 	Val   int
 	Left  *TreeNode
@@ -60,6 +60,31 @@ func dfs(root, p, q *TreeNode) *TreeNode {
 		return l
 	} else if r != nil {
 		return r
+	} else {
+		return nil
+	}
+}
+
+func lowestCommonAncestor2(root, p, q *TreeNode) *TreeNode {
+	if root == nil {
+		return nil
+	}
+
+	if root == p || root == q {
+		return root
+	}
+
+	leftSubTreeResult := lowestCommonAncestor(root.Left, p, q)
+	rightSubTreeResult := lowestCommonAncestor(root.Right, p, q)
+
+	if leftSubTreeResult != nil && rightSubTreeResult != nil {
+		// find p and q in root's left and sub trees respectively
+		// !
+		return root
+	} else if leftSubTreeResult != nil {
+		return leftSubTreeResult
+	} else if rightSubTreeResult != nil {
+		return rightSubTreeResult
 	} else {
 		return nil
 	}
